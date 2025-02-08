@@ -89,3 +89,138 @@ body {
   flex: 10;
   
 }
+
+
+
+
+
+
+
+
+/***************** Left and Right Button Nav*************/
+
+/* This is the CSS for the navigation buttons in the slider */
+.slider__nav-button {
+  /* The position of the button is absolute */
+  position: absolute;
+  /* The height and width of the button are 50px */
+  height: 50px;
+  width: 50px;
+  /* The background color of the button is #333 (dark gray) */
+  background-color: #333;
+  /* The opacity of the button is 0.5 (half transparent) */
+  opacity: .5;
+  /* The cursor of the button is a pointer */
+  cursor: pointer;
+}
+
+/* 8 The previous button is positioned at the top left corner of the slider*/
+#nav-button--prev {
+  /* The top position is 40% of the height of the slider */
+  top: 40%;
+  /* The left position is 0 */
+  left: 0;
+  /* The transform property is used to translate the button down by 70% */
+  transform: translateY(-70%);
+}
+
+/* The next button is positioned at the top right corner of the slider, 40% from the top and 0 from the right */
+#nav-button--next {
+  /* The top position is 40 % of the height of the slider */
+  top: 40%;
+  /* The right position is 0 */
+  right: 0;
+  /* The transform property is used to translate the button down by 70% */
+  transform: translateY(-70%);
+}
+
+
+/* The icons are positiones absolutely, after the buttons */
+#nav-button--prev::after,
+#nav-button--next::after {
+  /* The content of the icon is empty */
+  content: "";
+  /* The position of the icon is absolute */
+  position: absolute;
+  /* The border of the icon is solid white */
+  border-width: 0 4px 4px 0;
+  /* The icon is displayed as an inline-block */
+  display: inline-block;
+  /* The padding of the icon is 3px */
+  padding: 3px;
+  /* The width of the icon is 40% of the width of the button */
+  width: 40%;
+  /* The height of the icon is 40% of the height of the button */
+  height: 40%;
+}
+
+
+
+
+#nav-button--next::after {
+  /* The top position is 50% of the height of the button */
+  top: 50%;
+  /* The right position is 50% of the width of the button */
+  right: 50%;
+  /* The transform property is used to translate the icon 35% to the left and 50% down, and rotate it by -45 degrees */
+  transform: translate(25%, -50%) rotate(-45deg);
+}
+
+#nav-button--prev::after {
+  /* The top position is 50% of the height of the button */
+  top: 50%;
+  /* The right position is 50% of the width of the button */
+  right: 50%;
+  /* The transform property is used to translate the icon 75% to the right and 50% down, and rotate it by 135% degrees */
+  transform: translate(75%, -50%) rotate(135deg);
+}
+
+
+
+
+
+
+
+
+
+
+/***************** Bullet Nav************/
+.slider__nav {
+  /* The navigation bar is positioned absolutely at the bottom of the page, 3% from the bottom. */
+  position: absolute;
+  bottom: 3%;
+
+  /* The navigation bar is centered horizontally by settin the left position to 50% and using the transform property to translateX(-50%). */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* The text in the navigation bar is aligned to the center */
+  text-align: center;
+}
+.slider__navlink {
+  /*The link is displayed as an inline-block. */ 
+  display: inline-block; 
+  /*The Link is 28px by 20px. */ 
+  height: 20px; 
+  width: 20px; 
+  /*The Link has a border radius of 50%, making it a circle. */ 
+  border-radius: 50%; 
+  /*The link has a 1px solid border on the outside, in white. */ 
+  border: 1px #fff solid; 
+  /*The Link's background color is #333 (dark gray). */ 
+  background-color: #333; 
+  /*The Link's opacity is 0.8, making it slightly transparent. */ 
+  opacity: 8; 
+  /*The Link has a margin of 19px on all sides. */
+  margin: 10px 0 10px; 
+  /*The link is a pointer, meaning it can be clicked. */
+  cursor: pointer;
+}
+
+/* The ' .slider navlink.active class is used for the active link in the navigation bar. */ 
+.slider__navlink.active { 
+  /* The active link's background color is #fff (white). */
+  background-color: #fff; 
+  /* The active Link's border is 1px solid #333 (dark gray). */ 
+  border: 1px #333 solid;
+}
