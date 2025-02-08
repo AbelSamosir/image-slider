@@ -1,0 +1,91 @@
+
+
+
+
+/* Apply a consistent box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for the body of the webpage */
+body {
+   /* Set font to 'Poppins' */
+   font-family: 'Poppins', sans-serif;
+   /* Hide any overflow content */
+   overflow: hidden;
+   /* Remove default margin */
+   margin: 0;
+   /* Set background color */
+   background: #3206FF;
+   background: linear-gradient(45deg, #2e1d4b, #ffabf9, #f34f4e, #fdfdbb, #a9cf7d, #1b70b3);
+   /* Set body height to 100% of viewport height */
+   height: 100vh;
+}
+
+/****************Slider**************************/
+/* Styling for the container */
+.container {
+  /* Take up the full width of the parent */
+  width: 100%;
+  /* Use flexbox layout */
+  display: flex;
+  /* Add padding on the left and right */
+  padding: 0 20px;
+  /*child elements will be aligned vertically 
+  in the center og the container. */
+  align-items: center;
+  /* child elements will be aligned horizontally
+  in the center of the container. */
+  justify-content: center;
+}
+
+/* Styling for each slide */
+.slide {
+  /* Set slide to 80% of viewport height */
+  height: 80vh;
+  /* Add rounded corners */
+  border-radius: 20px;
+  /* Add margin around each slide */
+  margin: 10px;
+  /* Change cursor to pointer on hover */
+  cursor: pointer;
+  /* Set text color to white */
+  color: #fff;
+  /* DIstribute flexbox space evenly */
+  flex: 1;
+  /* Scale background image to cover */
+  background-size: cover;
+  /* Center the background image */
+  background-position: center;
+  /* Prevent background image repetition */
+  background-repeat: no-repeat;
+  /* Set position to relative position children */
+  position: relative;
+  /* Add smooth transition effects */
+  transition: all .5s ease-in-out
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for active slides */
+.slide.active {
+  /* Expand the active slide */
+  flex: 10;
+  
+}
